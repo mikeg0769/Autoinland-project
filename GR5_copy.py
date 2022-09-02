@@ -9,7 +9,7 @@ from PIL import Image
 st.header('AUTOINLAND INSURANCE CLAIM CHALLENGE')
 
 #Add image
-image = Image.open('Image/insurance2.jpg')
+image = Image.open('Images/claims.jpg')
 st.image(image, caption='Auto Insurance', width=680)
 
 st.subheader("""A model to predict if a customer will submit a vehicle insuarance claims in next three months""")
