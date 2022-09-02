@@ -9,7 +9,7 @@ from PIL import Image
 st.header('AUTOINLAND INSURANCE CLAIM CHALLENGE')
 
 #Add image
-image = Image.open('/home/arc/Desktop/ML_Bootcamp/week_6/2_wednesday/insurance2.jpg')
+image = Image.open('Image/insurance2.jpg')
 st.image(image, caption='Auto Insurance', width=680)
 
 st.subheader("""A model to predict if a customer will submit a vehicle insuarance claims in next three months""")
@@ -31,7 +31,7 @@ submit = Form.form_submit_button(label="make prediction")
 
 
 #loading the model
-with open(join(dirname(realpath(__file__)), "/home/arc/Desktop/ML_Bootcamp/week_5/1_Monday_5/notebook/hgbc_model.pkl"),"rb",) as e:
+with open(join(dirname(realpath(__file__)), "Model/hgbc_model.pkl"),"rb",) as e:
     model = joblib.load(e)
 
 
